@@ -1,0 +1,35 @@
+services:
+    Payum\Bundle\PayumBundle\Controller\AuthorizeController:
+        calls:
+            - method: setContainer
+              arguments: ['@service_container']
+
+    Payum\Bundle\PayumBundle\Controller\CancelController:
+        calls:
+            - method: setContainer
+              arguments: ['@service_container']
+
+    Payum\Bundle\PayumBundle\Controller\CaptureController:
+        calls:
+            - method: setContainer
+              arguments: ['@service_container']
+
+    Payum\Bundle\PayumBundle\Controller\NotifyController:
+        calls:
+            - method: setContainer
+              arguments: ['@service_container']
+
+    Payum\Bundle\PayumBundle\Controller\PayoutController:
+        calls:
+            - method: setContainer
+              arguments: ['@service_container']
+
+    Payum\Bundle\PayumBundle\Controller\RefundController:
+        calls:
+            - method: setContainer
+              arguments: ['@service_container']
+
+    Payum\Bundle\PayumBundle\Controller\SyncController:
+        calls:
+            - method: setContainer
+              arguments: ['@service_container']
